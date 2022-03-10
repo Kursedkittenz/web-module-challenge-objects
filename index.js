@@ -206,7 +206,7 @@ Use the getLongReviews function below to do the following:
 
 function getLongReviews(myArr) {
   let newArr =[]
-    for(x in myArr){
+    for(const x in myArr){
       if(myArr[x]['feedback'].split(' ').length > 15){
         newArr.push(myArr[x])
       }
