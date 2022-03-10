@@ -180,7 +180,7 @@ Use the getReviewsByRating function below to do the following:
 
  function getReviewByRating(myArr, myRating) {
    let newArr = []
-    for(x in myArr){
+    for(const x in myArr){
       if(myArr[x]['rating'] >= myRating && myArr[x]['rating'] < myRating+1){
         newArr.push(myArr[x])
       }
@@ -236,7 +236,7 @@ Use the carMaker function below to do the following:
 
 function carMaker(odo) {
   return {
-    odometer: odo,
+    odometer: 10,
     drive(distance){
       return this.odometer += distance
     }
